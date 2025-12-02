@@ -17,19 +17,19 @@ import photo14 from "@/assets/photos/bride-stand.jpg";
 import photo15 from "@/assets/photos/baby.jpg";
 
 const photos = [
-  { id: 1, src: photo1, alt: "Wedding Photography" },
-  { id: 2, src: photo2, alt: "Landscape Photography" },
-  { id: 3, src: photo3, alt: "Portrait Photography" },
+  { id: 1, src: photo7, alt: "Wedding Photography" },
+  { id: 2, src: photo15, alt: "Landscape Photography" },
+  { id: 3, src: photo8, alt: "Portrait Photography" },
   { id: 5, src: photo5, alt: "Architecture Photography" },
-  { id: 7, src: photo7, alt: "Street Photography" },
-  { id: 8, src: photo8, alt: "Street Photography" },
+  { id: 7, src: photo14, alt: "Street Photography" },
+  { id: 8, src: photo3, alt: "Street Photography" },
   { id: 9, src: photo9, alt: "Street Photography" },
   { id: 10, src: photo10, alt: "Street Photography" },
   { id: 11, src: photo11, alt: "Street Photography" },
   { id: 12, src: photo12, alt: "Street Photography" },
   { id: 13, src: photo13, alt: "Street Photography" },
-  { id: 14, src: photo14, alt: "Street Photography" },
-  { id: 15, src: photo15, alt: "Street Photography" },
+  { id: 14, src: photo1, alt: "Street Photography" },
+  { id: 15, src: photo2, alt: "Street Photography" },
 ];
 
 const PhotoGallery = () => {

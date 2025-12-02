@@ -6,6 +6,7 @@ import video2Thumb from "@/assets/videos/desert-thumb.png";
 import video3Thumb from "@/assets/videos/dxb-thumb.png";
 import video4Thumb from "@/assets/videos/random-thumb.png";
 import video5Thumb from "@/assets/videos/jeep-thumb.png";
+import video6Thumb from "@/assets/videos/product-thumb.jpg";
 
 const videos = [
   {
@@ -42,6 +43,13 @@ const videos = [
     thumbnail: video5Thumb,
     description:"Thrilling off-road experience",
     videoSrc: "mov/random.MOV",
+  },
+  {
+    id:6,
+    title:"brand video",
+    thumbnail: video6Thumb,
+    description:"brand promo video",
+    videoSrc: "mov/perfume.mp4",
   }
 ];
 
