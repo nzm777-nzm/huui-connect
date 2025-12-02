@@ -2,9 +2,9 @@ import { Instagram, Youtube, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Instagram, href: "https://instagram.com/muflih", label: "Instagram" },
+    { icon: Instagram, href: "https://instagram.com/mufli_.h", label: "Instagram" },
     { icon: Youtube, href: "https://youtube.com/@muflih", label: "YouTube" },
-    { icon: MessageCircle, href: "https://wa.me/1234567890", label: "WhatsApp" },
+    { icon: MessageCircle, href: "https://wa.me/+971569616494", label: "WhatsApp" },
   ];
 
   return (

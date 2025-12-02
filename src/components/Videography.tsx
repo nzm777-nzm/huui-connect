@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import VideoModal from "./VideoModal";
-import video1Thumb from "@/assets/videos/video1-thumb.jpg";
-import video2Thumb from "@/assets/videos/video2-thumb.jpg";
-import video3Thumb from "@/assets/videos/video3-thumb.jpg";
+import video1Thumb from "@/assets/videos/wedding-thumb.png";
+import video2Thumb from "@/assets/videos/desert-thumb.png";
+import video3Thumb from "@/assets/videos/dxb-thumb.png";
+import video4Thumb from "@/assets/videos/random-thumb.png";
+import video5Thumb from "@/assets/videos/jeep-thumb.png";
 
 const videos = [
   {
@@ -11,19 +13,36 @@ const videos = [
     title: "Wedding Cinematic Film",
     thumbnail: video1Thumb,
     description: "A beautiful love story captured",
+    videoSrc: "mov/wedding.MP4",  // <---- ADD THIS
   },
   {
     id: 2,
-    title: "Commercial Brand Shoot",
+    title: "short cinematic",
     thumbnail: video2Thumb,
-    description: "Professional corporate video",
+    description: "A journey through the desert",
+    videoSrc: "mov/desert.mp4",
   },
   {
     id: 3,
     title: "Travel Documentary",
     thumbnail: video3Thumb,
     description: "Exploring new horizons",
+    videoSrc: "mov/dubai.mp4",
   },
+  {
+    id:4,
+    title:"Expolore",
+    thumbnail: video4Thumb,
+    description:"explore the unseen",
+    videoSrc: "mov/chill.mp4",
+  },
+  {
+    id:5,
+    title:"Jeep Adventure",
+    thumbnail: video5Thumb,
+    description:"Thrilling off-road experience",
+    videoSrc: "mov/random.MOV",
+  }
 ];
 
 const Videography = () => {
@@ -72,16 +91,17 @@ const Videography = () => {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground text-sm">
-            Note: Video files should be placed in <code className="bg-secondary px-2 py-1 rounded">/public/videos/</code> for local playback
+            {/* Note: Video files should be placed in <code className="bg-secondary px-2 py-1 rounded">/public/videos/</code> for local playback */}
           </p>
         </div>
       </div>
-
       <VideoModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
         videoTitle={videos[selectedVideo]?.title}
+        videoSrc={videos[selectedVideo]?.videoSrc}   // <---- ADD THIS
       />
+
     </section>
   );
 };

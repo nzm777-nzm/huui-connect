@@ -1,25 +1,30 @@
-import { Video, Camera, Smartphone, Briefcase } from "lucide-react";
+import { Video, Camera, Users, Megaphone, PlayCircle } from "lucide-react";
 
 const services = [
   {
     icon: Video,
-    title: "Wedding Videography",
-    description: "Cinematic wedding films that capture every emotion and moment of your special day.",
+    title: "Videography",
+    description: "Professional cinematic videos for weddings, brands, commercials and storytelling.",
   },
   {
     icon: Camera,
     title: "Photography",
-    description: "Professional photography services for events, portraits, and commercial projects.",
+    description: "High-quality photography for events, portraits, products, lifestyle and commercial use.",
   },
   {
-    icon: Smartphone,
-    title: "Short Form Content",
-    description: "Engaging Instagram Reels and TikTok content optimized for social media impact.",
+    icon: Users,
+    title: "Event Coverage",
+    description: "Complete event coverage including weddings, shows, corporate functions and celebrations.",
   },
   {
-    icon: Briefcase,
-    title: "Brand & Commercial",
-    description: "High-quality commercial shoots for brands looking to elevate their visual identity.",
+    icon: Megaphone,
+    title: "Content Marketing",
+    description: "Creating social-media ready photo/video content designed for growth and engagement.",
+  },
+  {
+    icon: PlayCircle,
+    title: "Vlog & Storytelling",
+    description: "Creative vlog shooting and storytelling edits that highlight emotions and real moments.",
   },
 ];
 
@@ -31,7 +36,7 @@ const Services = () => {
           Services
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (

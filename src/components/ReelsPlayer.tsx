@@ -6,6 +6,7 @@ interface Reel {
   id: number;
   thumbnail: string;
   title: string;
+  src: string; // video file
 }
 
 interface ReelsPlayerProps {
@@ -25,7 +26,7 @@ const ReelsPlayer = ({ isOpen, onClose, reels, initialIndex }: ReelsPlayerProps)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!isOpen) return;
-      
+
       if (e.key === "Escape") onClose();
       if (e.key === "ArrowLeft") goToPrevious();
       if (e.key === "ArrowRight") goToNext();
@@ -52,6 +53,8 @@ const ReelsPlayer = ({ isOpen, onClose, reels, initialIndex }: ReelsPlayerProps)
 
   if (!isOpen) return null;
 
+  const currentReel = reels[currentIndex];
+
   return (
     <div className="fixed inset-0 z-50 bg-black flex items-center justify-center animate-fade-in">
       {/* Close Button */}
@@ -64,7 +67,7 @@ const ReelsPlayer = ({ isOpen, onClose, reels, initialIndex }: ReelsPlayerProps)
         <X className="w-6 h-6" />
       </Button>
 
-      {/* Previous Button */}
+      {/* Previous */}
       {reels.length > 1 && (
         <Button
           onClick={goToPrevious}
@@ -76,20 +79,17 @@ const ReelsPlayer = ({ isOpen, onClose, reels, initialIndex }: ReelsPlayerProps)
         </Button>
       )}
 
-      {/* Reel Container */}
-      <div className="relative w-full max-w-md h-full max-h-[90vh] mx-4">
-        <div className="w-full h-full bg-secondary/50 rounded-2xl flex flex-col items-center justify-center p-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">{reels[currentIndex].title}</h3>
-          <p className="text-muted-foreground mb-4">
-            Place vertical video (9:16) in <code className="bg-background px-2 py-1 rounded">/public/reels/</code>
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Update component to use: <code className="bg-background px-2 py-1 rounded">&lt;video src="/reels/reel1.mp4" /&gt;</code>
-          </p>
-        </div>
+      {/* Video Player */}
+      <div className="relative w-full max-w-md h-full max-h-[90vh] flex items-center justify-center px-4">
+        <video
+          src={currentReel.src}
+          controls
+          autoPlay
+          className="w-full h-full rounded-2xl object-cover"
+        />
       </div>
 
-      {/* Next Button */}
+      {/* Next */}
       {reels.length > 1 && (
         <Button
           onClick={goToNext}

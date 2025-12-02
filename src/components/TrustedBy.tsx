@@ -1,43 +1,47 @@
-const brands = [
-  "Brand One",
-  "Brand Two", 
-  "Brand Three",
-  "Brand Four",
-  "Brand Five",
-  "Brand Six",
-  "Brand Seven",
-  "Brand Eight",
+import React from "react";
+
+const brandLogos = [
+  "/brands/first.jpg",
+  "/brands/hala.jpg",
+  "/brands/mandi.jpg",
+  "/brands/paris.jpg",
+  "/brands/shake.jpg",
+  "/brands/sun.jpg",
 ];
 
 const TrustedBy = () => {
   return (
-    <section className="py-24 px-4 md:px-8 lg:px-16 bg-secondary/30 overflow-hidden">
+    <section
+      id="trustedby"
+      className="py-24 px-4 md:px-8 lg:px-16 bg-secondary/30 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 text-center animate-fade-in-up">
           Trusted By
         </h2>
 
-        {/* Scrolling Marquee */}
-        <div className="relative">
-          <div className="flex animate-scroll">
-            {[...brands, ...brands].map((brand, index) => (
-              <div
+        {/* Marquee Wrapper */}
+        <div className="relative w-full overflow-hidden">
+          <div className="flex items-center gap-16 animate-marquee">
+            {[...brandLogos, ...brandLogos].map((logo, index) => (
+              <img
                 key={index}
-                className="flex-shrink-0 mx-8 glass-card px-12 py-8 rounded-2xl"
-              >
-                <p className="text-2xl font-semibold whitespace-nowrap">{brand}</p>
-              </div>
+                src={logo}
+                alt={`Brand ${index}`}
+                className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition"
+              />
             ))}
           </div>
         </div>
 
         <p className="text-center text-muted-foreground mt-12 text-sm">
-          Add brand logos to <code className="bg-secondary px-2 py-1 rounded">/public/brands/</code>
+          {/* Add your client logos inside{" "} */}
+          {/* <code className="bg-secondary px-2 py-1 rounded">/public/brands/</code> */}
         </p>
       </div>
 
       <style>{`
-        @keyframes scroll {
+        @keyframes marquee {
           0% {
             transform: translateX(0);
           }
@@ -45,12 +49,12 @@ const TrustedBy = () => {
             transform: translateX(-50%);
           }
         }
-        
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
+
+        .animate-marquee {
+          animation: marquee 25s linear infinite;
         }
-        
-        .animate-scroll:hover {
+
+        .animate-marquee:hover {
           animation-play-state: paused;
         }
       `}</style>

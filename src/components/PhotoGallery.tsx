@@ -1,19 +1,35 @@
 import { useState } from "react";
 import Lightbox from "./Lightbox";
-import photo1 from "@/assets/photos/photo1.jpg";
-import photo2 from "@/assets/photos/photo2.jpg";
-import photo3 from "@/assets/photos/photo3.jpg";
-import photo4 from "@/assets/photos/photo4.jpg";
-import photo5 from "@/assets/photos/photo5.jpg";
-import photo6 from "@/assets/photos/photo6.jpg";
+import photo1 from "@/assets/photos/stage.jpg";
+import photo2 from "@/assets/photos/fog.jpg";
+import photo3 from "@/assets/photos/couple.jpg";
+import photo4 from "@/assets/photos/product.jpg";
+import photo5 from "@/assets/photos/znap.jpg";
+import photo6 from "@/assets/photos/per.jpg";
+import photo7 from "@/assets/photos/wedding entry.jpg";
+import photo8 from "@/assets/photos/bride.jpg";
+import photo9 from "@/assets/photos/hand.jpg";
+import photo10 from "@/assets/photos/classic.jpg";
+import photo11 from "@/assets/photos/coat.jpg";
+import photo12 from "@/assets/photos/znap wedding.jpg";
+import photo13 from "@/assets/photos/singer.jpg";
+import photo14 from "@/assets/photos/bride-stand.jpg";
+import photo15 from "@/assets/photos/baby.jpg";
 
 const photos = [
   { id: 1, src: photo1, alt: "Wedding Photography" },
   { id: 2, src: photo2, alt: "Landscape Photography" },
   { id: 3, src: photo3, alt: "Portrait Photography" },
-  { id: 4, src: photo4, alt: "Product Photography" },
   { id: 5, src: photo5, alt: "Architecture Photography" },
-  { id: 6, src: photo6, alt: "Street Photography" },
+  { id: 7, src: photo7, alt: "Street Photography" },
+  { id: 8, src: photo8, alt: "Street Photography" },
+  { id: 9, src: photo9, alt: "Street Photography" },
+  { id: 10, src: photo10, alt: "Street Photography" },
+  { id: 11, src: photo11, alt: "Street Photography" },
+  { id: 12, src: photo12, alt: "Street Photography" },
+  { id: 13, src: photo13, alt: "Street Photography" },
+  { id: 14, src: photo14, alt: "Street Photography" },
+  { id: 15, src: photo15, alt: "Street Photography" },
 ];
 
 const PhotoGallery = () => {

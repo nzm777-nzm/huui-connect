@@ -1,14 +1,37 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import ReelsPlayer from "./ReelsPlayer";
-import reel1Thumb from "@/assets/reels/reel1-thumb.jpg";
-import reel2Thumb from "@/assets/reels/reel2-thumb.jpg";
-import reel3Thumb from "@/assets/reels/reel3-thumb.jpg";
+
+import reel1Thumb from "@/assets/reels/dynamate-thumb.jpg";
+import reel2Thumb from "@/assets/reels/promotion-thumb.png";
+import reel3Thumb from "@/assets/reels/sunburn-thumb.png";
+import reel4Thumb from "@/assets/reels/random-thumb.png";
 
 const reels = [
-  { id: 1, thumbnail: reel1Thumb, title: "Behind the Scenes" },
-  { id: 2, thumbnail: reel2Thumb, title: "Lifestyle Content" },
-  { id: 3, thumbnail: reel3Thumb, title: "Creative Process" },
+  {
+    id: 1,
+    thumbnail: reel1Thumb,
+    title: "product promo",
+    src: "/reel/dynamate.mp4",
+  },
+  {
+    id: 2,
+    thumbnail: reel2Thumb,
+    title: "Business Promotion",
+    src: "/reel/promotion.mp4",
+  },
+  {
+    id: 3,
+    thumbnail: reel3Thumb,
+    title: "Event Highlights",
+    src: "/reel/sunburn.mp4",
+  },
+  {
+    id: 4,
+    thumbnail: reel4Thumb,
+    title: "food vlog",
+    src: "/reel/random.mp4",
+  },
 ];
 
 const ReelsSection = () => {
@@ -54,7 +77,7 @@ const ReelsSection = () => {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground text-sm">
-            Note: Reel videos (9:16 vertical) should be placed in <code className="bg-secondary px-2 py-1 rounded">/public/reels/</code>
+            {/* Place reel videos in <code className="bg-secondary px-2 py-1 rounded">/public/reels/</code> */}
           </p>
         </div>
       </div>

@@ -7,6 +7,7 @@ import Services from "@/components/Services";
 import TrustedBy from "@/components/TrustedBy";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import GoogleCloudSection from "@/components/GoogleCloud";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <PhotoGallery />
       <Videography />
       <ReelsSection />
+      <GoogleCloudSection />
       <Services />
       <TrustedBy />
       <Contact />

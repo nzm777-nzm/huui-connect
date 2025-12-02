@@ -6,9 +6,10 @@ interface VideoModalProps {
   isOpen: boolean;
   onClose: () => void;
   videoTitle: string;
+  videoSrc: string;   // <-- IMPORTANT
 }
 
-const VideoModal = ({ isOpen, onClose, videoTitle }: VideoModalProps) => {
+const VideoModal = ({ isOpen, onClose, videoTitle, videoSrc }: VideoModalProps) => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -28,7 +29,7 @@ const VideoModal = ({ isOpen, onClose, videoTitle }: VideoModalProps) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center animate-fade-in">
+    <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center">
       {/* Close Button */}
       <Button
         onClick={onClose}
@@ -39,17 +40,15 @@ const VideoModal = ({ isOpen, onClose, videoTitle }: VideoModalProps) => {
         <X className="w-6 h-6" />
       </Button>
 
-      {/* Video Player Placeholder */}
-      <div className="max-w-6xl w-full mx-4">
-        <div className="aspect-video bg-secondary/50 rounded-2xl flex flex-col items-center justify-center p-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">{videoTitle}</h3>
-          <p className="text-muted-foreground mb-4">
-            Place your video file in <code className="bg-background px-2 py-1 rounded">/public/videos/</code>
-          </p>
-          <p className="text-sm text-muted-foreground">
-            Then update this component to use: <code className="bg-background px-2 py-1 rounded">&lt;video src="/videos/your-video.mp4" /&gt;</code>
-          </p>
-        </div>
+      {/* Video Player */}
+      <div className="max-w-5xl w-full mx-4">
+        <video
+          src={videoSrc}
+          controls
+          autoPlay
+          className="rounded-2xl w-full"
+        />
+        <h3 className="text-center text-xl text-white mt-4">{videoTitle}</h3>
       </div>
     </div>
   );
