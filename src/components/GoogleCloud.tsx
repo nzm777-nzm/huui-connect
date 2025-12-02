@@ -1,6 +1,6 @@
 const GoogleCloudSection = () => {
   return (
-    <section className="py-20 px-6 md:px-12 bg-secondary/20">
+    <section className="py-20 px-6 md:px-12 bg-[#000000] text-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">Full Video Library</h2>
 
