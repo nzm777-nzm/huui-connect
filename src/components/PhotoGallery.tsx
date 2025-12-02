@@ -42,7 +42,7 @@ const PhotoGallery = () => {
   };
 
   return (
-    <section id="photography" className="py-24 px-4 md:px-8 lg:px-16 bg-secondary/30">
+    <section id="photography" className="py-24 px-4 md:px-8 lg:px-16 bg-[#000000] text-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-16 text-center animate-fade-in-up">
           Photography
