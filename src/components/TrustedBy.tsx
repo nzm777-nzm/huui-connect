@@ -34,24 +34,17 @@ const TrustedBy = () => {
           </div>
         </div>
 
-        <p className="text-center text-muted-foreground mt-12 text-sm">
-          {/* Add your client logos inside{" "} */}
-          {/* <code className="bg-secondary px-2 py-1 rounded">/public/brands/</code> */}
-        </p>
+        <p className="text-center text-muted-foreground mt-12 text-sm"></p>
       </div>
 
       <style>{`
         @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
 
         .animate-marquee {
-          animation: marquee 25s linear infinite;
+          animation: marquee 10s linear infinite; /* faster scroll */
         }
 
         .animate-marquee:hover {

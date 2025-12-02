@@ -3,6 +3,7 @@ import { Cloud, Folder } from "lucide-react";
 
 const GoogleCloudSection = () => {
   return (
+<<<<<<< HEAD
     <section className="py-24 px-6 md:px-12 bg-background-elevated text-white relative overflow-hidden">
       {/* Subtle gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"></div>
@@ -13,6 +14,11 @@ const GoogleCloudSection = () => {
         </div>
         
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Client Delivery Portal</h2>
+=======
+    <section className="py-20 px-6 md:px-12 bg-[#000000] text-white">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-6">Complete Work Collection (Google Drive)</h2>
+>>>>>>> 0dbafe4 (updated trusted)
 
         <p className="text-[#B0B0B0] text-lg mb-10 max-w-2xl mx-auto">
           Access your complete collection of high-quality videos and final deliverables. All files are securely stored and ready to download.
