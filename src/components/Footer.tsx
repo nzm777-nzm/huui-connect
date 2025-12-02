@@ -8,7 +8,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-12 px-4 md:px-8 lg:px-16 border-t border-border/50">
+    <footer className="py-12 px-4 md:px-8 lg:px-16 bg-[#000000] text-white border-t border-border/50">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand */}
