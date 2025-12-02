@@ -22,22 +22,23 @@ const Hero = () => {
         Your browser does not support the video tag.
       </video>
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/40 z-0"></div>
+      {/* Cinematic Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/70 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-0"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 animate-fade-in-up">
-        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-4 tracking-tight text-white drop-shadow-xl">
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-4 tracking-tight text-white text-shadow-strong">
           Muflih Ibrahim
         </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 font-light drop-shadow">
+        <p className="text-xl md:text-2xl lg:text-3xl text-[#EDEDED] mb-10 font-light" style={{ textShadow: '0 4px 20px rgba(0, 0, 0, 0.8)' }}>
           Videographer • Photographer • Content Creator
         </p>
 
         <Button 
           onClick={scrollToWork}
           size="lg"
-          className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-xl shadow-[0_0_40px_rgba(245,158,11,0.3)] hover:shadow-[0_0_60px_rgba(245,158,11,0.5)] transition-all duration-300"
+          variant="cinematic"
         >
           View Work
         </Button>
