@@ -9,13 +9,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground shadow-[0_0_30px_rgba(185,28,28,0.4)] hover:shadow-[0_0_50px_rgba(185,28,28,0.6)] hover:bg-[#991b1b] font-semibold",
+        default: "bg-primary text-primary-foreground shadow-[0px_0px_20px_rgba(177,15,46,0.15)] hover:shadow-[0px_0px_25px_rgba(177,15,46,0.2)] hover:bg-[#8E0C24] font-semibold",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border-2 border-primary/60 bg-transparent text-primary hover:bg-primary/10 hover:border-primary hover:shadow-[0_0_25px_rgba(185,28,28,0.3)]",
+        outline: "border-2 border-[#D21E37]/60 bg-transparent text-primary hover:bg-primary/10 hover:border-[#D21E37]",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent/10 hover:text-accent",
         link: "text-primary underline-offset-4 hover:underline",
-        cinematic: "bg-gradient-to-r from-primary to-primary-glow text-primary-foreground shadow-[0_0_40px_rgba(185,28,28,0.5)] hover:shadow-[0_0_60px_rgba(185,28,28,0.7)] hover:scale-105 font-bold",
+        cinematic: "bg-gradient-to-r from-[#B10F2E] to-[#8E0C24] text-primary-foreground shadow-[0px_0px_20px_rgba(177,15,46,0.15)] hover:shadow-[0px_0px_25px_rgba(177,15,46,0.2)] hover:scale-[1.02] font-bold",
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -20,10 +20,11 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    /* Cinematic Red Accent */
-    --primary: 0 72% 41%;
+    /* Cinematic Deep Red Accent */
+    --primary: 350 85% 38%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 0 72% 35%;
+    --primary-hover: 350 85% 30%;
+    --primary-border: 350 78% 47%;
 
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 98%;
@@ -31,7 +32,7 @@ All colors MUST be HSL.
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 69%;
 
-    --accent: 0 72% 41%;
+    --accent: 350 85% 38%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,7 +40,7 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 0 72% 41%;
+    --ring: 350 85% 38%;
 
     --radius: 1rem;
 
@@ -48,13 +49,13 @@ All colors MUST be HSL.
     --glass-border: rgba(255, 255, 255, 0.08);
     
     /* Cinematic Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 72% 41%) 0%, hsl(0 72% 35%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(350 85% 38%) 0%, hsl(350 85% 30%) 100%);
     --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.7) 100%);
     --gradient-overlay: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0.95) 100%);
     
-    /* Cinematic Shadows & Glows */
-    --shadow-glow-primary: 0 0 50px rgba(185, 28, 28, 0.4);
-    --shadow-glow-primary-hover: 0 0 70px rgba(185, 28, 28, 0.6);
+    /* Cinematic Shadows - Soft & Premium */
+    --shadow-soft: 0px 0px 20px rgba(177, 15, 46, 0.15);
+    --shadow-soft-hover: 0px 0px 25px rgba(177, 15, 46, 0.2);
     --shadow-elegant: 0 20px 60px rgba(0, 0, 0, 0.7);
     --shadow-text: 0 4px 20px rgba(0, 0, 0, 0.8);
     --shadow-text-strong: 0 6px 30px rgba(0, 0, 0, 0.9);
