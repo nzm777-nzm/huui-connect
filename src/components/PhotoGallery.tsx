@@ -6,7 +6,7 @@ import photo3 from "@/assets/photos/couple.jpg";
 import photo4 from "@/assets/photos/product.jpg";
 import photo5 from "@/assets/photos/znap.jpg";
 import photo6 from "@/assets/photos/per.jpg";
-import photo7 from "@/assets/photos/wedding entry.jpg";
+import photo7 from "@/assets/photos/bride-side.png";
 import photo8 from "@/assets/photos/bride.jpg";
 import photo9 from "@/assets/photos/hand.jpg";
 import photo10 from "@/assets/photos/classic.jpg";
@@ -15,12 +15,16 @@ import photo12 from "@/assets/photos/znap wedding.jpg";
 import photo13 from "@/assets/photos/singer.jpg";
 import photo14 from "@/assets/photos/bride-stand.jpg";
 import photo15 from "@/assets/photos/baby.jpg";
+import photo16 from "@/assets/photos/couples-walk.png";
+import photo17 from "@/assets/photos/girl-flower.png";
 
 const photos = [
   { id: 1, src: photo7, alt: "Wedding Photography" },
   { id: 2, src: photo15, alt: "Landscape Photography" },
   { id: 3, src: photo8, alt: "Portrait Photography" },
+  { id: 4, src: photo16, alt: "Portrait Photography" },
   { id: 5, src: photo5, alt: "Architecture Photography" },
+  { id: 6, src: photo17, alt: "Architecture Photography" },
   { id: 7, src: photo14, alt: "Street Photography" },
   { id: 8, src: photo3, alt: "Street Photography" },
   { id: 9, src: photo9, alt: "Street Photography" },
