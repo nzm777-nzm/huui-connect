@@ -28,7 +28,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 animate-fade-in-up">
-        <p className="text-4xl md:text-6xl lg:text-7xl font-semibold mb-2 tracking-tight text-white text-shadow-strong">
+        <p className="text-3xl md:text-5xl lg:text-6xl font-semibold mb-6 tracking-tight text-white text-shadow-strong">
           Hey there,
         </p>
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-4 tracking-tight text-white text-shadow-strong">

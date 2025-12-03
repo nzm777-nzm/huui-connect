@@ -15,13 +15,13 @@ const GoogleCloudSection = () => {
 
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-          Complete Work Collection (Google Drive)
+          google cloud video library
         </h2>
 
         {/* Description */}
-        <p className="text-[#B0B0B0] text-lg mb-10 max-w-2xl mx-auto">
+        {/* <p className="text-[#B0B0B0] text-lg mb-10 max-w-2xl mx-auto">
           Access your complete collection of high-quality videos and final deliverables. All files are securely stored and ready to download.
-        </p>
+        </p> */}
 
         {/* Button */}
         <Button
