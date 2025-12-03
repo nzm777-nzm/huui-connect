@@ -20,19 +20,18 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
 
-    /* Modern Violet Accent */
-    --primary: 263 84% 76%;
+    /* Cinematic Red Accent */
+    --primary: 0 72% 41%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 258 90% 66%;
-    --primary-border: 263 84% 80%;
+    --primary-glow: 0 72% 35%;
 
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 98%;
 
     --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 75%;
+    --muted-foreground: 0 0% 69%;
 
-    --accent: 263 84% 76%;
+    --accent: 0 72% 41%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -40,23 +39,22 @@ All colors MUST be HSL.
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 263 84% 76%;
+    --ring: 0 72% 41%;
 
     --radius: 1rem;
 
     /* Glass morphism - Enhanced */
     --glass-bg: rgba(255, 255, 255, 0.03);
-    --glass-border: rgba(167, 139, 250, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.08);
     
-    /* Modern Violet Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(263 84% 76%) 0%, hsl(258 90% 66%) 100%);
+    /* Cinematic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 72% 41%) 0%, hsl(0 72% 35%) 100%);
     --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.7) 100%);
     --gradient-overlay: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgba(10, 10, 10, 0.95) 100%);
     
-    /* Violet Shadows - Soft & Premium */
-    --shadow-soft: 0 0 20px rgba(167, 139, 250, 0.2);
-    --shadow-soft-hover: 0 0 30px rgba(167, 139, 250, 0.35);
-    --shadow-glow: 0 0 40px rgba(167, 139, 250, 0.5);
+    /* Cinematic Shadows & Glows */
+    --shadow-glow-primary: 0 0 50px rgba(185, 28, 28, 0.4);
+    --shadow-glow-primary-hover: 0 0 70px rgba(185, 28, 28, 0.6);
     --shadow-elegant: 0 20px 60px rgba(0, 0, 0, 0.7);
     --shadow-text: 0 4px 20px rgba(0, 0, 0, 0.8);
     --shadow-text-strong: 0 6px 30px rgba(0, 0, 0, 0.9);
