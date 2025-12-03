@@ -7,6 +7,8 @@ const brandLogos = [
   "/brands/paris.jpg",
   "/brands/shake.jpg",
   "/brands/sun.jpg",
+  "/brands/taste-india.jpg",
+  "/brands/tely-stories.jpg",
 ];
 
 const TrustedBy = () => {
