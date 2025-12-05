@@ -1,10 +1,13 @@
 import React from "react";
 
-const brandLogos = [
+const brandRow1 = [
   "/brands/first.jpg",
   "/brands/hala.jpg",
   "/brands/mandi.jpg",
   "/brands/paris.jpg",
+];
+
+const brandRow2 = [
   "/brands/shake.jpg",
   "/brands/sun.jpg",
   "/brands/taste-india.jpg",
@@ -25,7 +28,7 @@ const TrustedBy = () => {
         {/* Row 1 - Scrolls Left */}
         <div className="relative w-full overflow-hidden mb-8">
           <div className="flex items-center gap-12 animate-marquee-right">
-            {[...brandLogos, ...brandLogos, ...brandLogos].map((logo, index) => (
+{[...brandRow1, ...brandRow1, ...brandRow1].map((logo, index) => (
               <img
                 key={`row1-${index}`}
                 src={logo}
@@ -39,7 +42,7 @@ const TrustedBy = () => {
         {/* Row 2 - Scrolls Right */}
         <div className="relative w-full overflow-hidden">
           <div className="flex items-center gap-12 animate-marquee-left">
-            {[...brandLogos, ...brandLogos, ...brandLogos].map((logo, index) => (
+{[...brandRow2, ...brandRow2, ...brandRow2].map((logo, index) => (
               <img
                 key={`row2-${index}`}
                 src={logo}
