@@ -30,7 +30,7 @@ const TrustedBy = () => {
                 key={`row1-${index}`}
                 src={logo}
                 alt={`Brand ${index}`}
-                className="h-14 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                className="h-10 md:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
               />
             ))}
           </div>
@@ -44,7 +44,7 @@ const TrustedBy = () => {
                 key={`row2-${index}`}
                 src={logo}
                 alt={`Brand ${index}`}
-                className="h-14 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+                className="h-10 md:h-12 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
               />
             ))}
           </div>
