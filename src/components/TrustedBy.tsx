@@ -22,34 +22,56 @@ const TrustedBy = () => {
           Trusted By
         </h2>
 
-        {/* Marquee Wrapper */}
-        <div className="relative w-full overflow-hidden">
-          <div className="flex items-center gap-16 animate-marquee">
-            {[...brandLogos, ...brandLogos].map((logo, index) => (
+        {/* Row 1 - Scrolls Left */}
+        <div className="relative w-full overflow-hidden mb-8">
+          <div className="flex items-center gap-12 animate-marquee-left">
+            {[...brandLogos, ...brandLogos, ...brandLogos].map((logo, index) => (
               <img
-                key={index}
+                key={`row1-${index}`}
                 src={logo}
                 alt={`Brand ${index}`}
-                className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition"
+                className="h-14 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
               />
             ))}
           </div>
         </div>
 
-        <p className="text-center text-muted-foreground mt-12 text-sm"></p>
+        {/* Row 2 - Scrolls Right */}
+        <div className="relative w-full overflow-hidden">
+          <div className="flex items-center gap-12 animate-marquee-right">
+            {[...brandLogos, ...brandLogos, ...brandLogos].map((logo, index) => (
+              <img
+                key={`row2-${index}`}
+                src={logo}
+                alt={`Brand ${index}`}
+                className="h-14 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 flex-shrink-0"
+              />
+            ))}
+          </div>
+        </div>
       </div>
 
       <style>{`
-        @keyframes marquee {
+        @keyframes marquee-left {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-33.33%); }
         }
 
-        .animate-marquee {
-          animation: marquee 10s linear infinite; /* faster scroll */
+        @keyframes marquee-right {
+          0% { transform: translateX(-33.33%); }
+          100% { transform: translateX(0); }
         }
 
-        .animate-marquee:hover {
+        .animate-marquee-left {
+          animation: marquee-left 20s linear infinite;
+        }
+
+        .animate-marquee-right {
+          animation: marquee-right 20s linear infinite;
+        }
+
+        .animate-marquee-left:hover,
+        .animate-marquee-right:hover {
           animation-play-state: paused;
         }
       `}</style>
