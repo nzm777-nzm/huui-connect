@@ -5,6 +5,8 @@ const brandRow1 = [
   "/brands/hala.jpg",
   "/brands/mandi.jpg",
   "/brands/paris.jpg",
+  "/brands/sport.jpg",
+  "/brands/jost.jpg",
 ];
 
 const brandRow2 = [
@@ -12,6 +14,7 @@ const brandRow2 = [
   "/brands/sun.jpg",
   "/brands/taste-india.jpg",
   "/brands/tely-stories.jpg",
+  "/brands/tasty.jpg",
 ];
 
 const TrustedBy = () => {
