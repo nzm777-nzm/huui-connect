@@ -24,7 +24,7 @@ const TrustedBy = () => {
 
         {/* Row 1 - Scrolls Left */}
         <div className="relative w-full overflow-hidden mb-8">
-          <div className="flex items-center gap-12 animate-marquee-left">
+          <div className="flex items-center gap-12 animate-marquee-right">
             {[...brandLogos, ...brandLogos, ...brandLogos].map((logo, index) => (
               <img
                 key={`row1-${index}`}
@@ -38,7 +38,7 @@ const TrustedBy = () => {
 
         {/* Row 2 - Scrolls Right */}
         <div className="relative w-full overflow-hidden">
-          <div className="flex items-center gap-12 animate-marquee-right">
+          <div className="flex items-center gap-12 animate-marquee-left">
             {[...brandLogos, ...brandLogos, ...brandLogos].map((logo, index) => (
               <img
                 key={`row2-${index}`}
