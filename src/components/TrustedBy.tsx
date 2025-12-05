@@ -28,7 +28,7 @@ const TrustedBy = () => {
         {/* Row 1 - Scrolls Left */}
         <div className="relative w-full overflow-hidden mb-8">
           <div className="flex items-center gap-12 animate-marquee-right">
-{[...brandRow1, ...brandRow1, ...brandRow1].map((logo, index) => (
+{[...brandRow1, ...brandRow1, ...brandRow1, ...brandRow1, ...brandRow1, ...brandRow1].map((logo, index) => (
               <img
                 key={`row1-${index}`}
                 src={logo}
@@ -42,7 +42,7 @@ const TrustedBy = () => {
         {/* Row 2 - Scrolls Right */}
         <div className="relative w-full overflow-hidden">
           <div className="flex items-center gap-12 animate-marquee-left">
-{[...brandRow2, ...brandRow2, ...brandRow2].map((logo, index) => (
+{[...brandRow2, ...brandRow2, ...brandRow2, ...brandRow2, ...brandRow2, ...brandRow2].map((logo, index) => (
               <img
                 key={`row2-${index}`}
                 src={logo}
@@ -57,11 +57,11 @@ const TrustedBy = () => {
       <style>{`
         @keyframes marquee-left {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-33.33%); }
+          100% { transform: translateX(-50%); }
         }
 
         @keyframes marquee-right {
-          0% { transform: translateX(-33.33%); }
+          0% { transform: translateX(-50%); }
           100% { transform: translateX(0); }
         }
 
